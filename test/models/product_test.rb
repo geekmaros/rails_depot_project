@@ -32,7 +32,6 @@ class ProductTest < ActiveSupport::TestCase
 
     product.price = 1
     assert product.valid?
-
   end
 
   def new_product(image_url)
@@ -53,7 +52,7 @@ class ProductTest < ActiveSupport::TestCase
     end
 
     bad.each do |image_url|
-      assert new_product(image_url).invalid?, "#{image_url} must be invalid"
+      assert new_product(image_url).invalid?, "#{ image_url} must be invalid"
     end
   end
 

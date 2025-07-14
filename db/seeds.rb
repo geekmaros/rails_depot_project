@@ -16,5 +16,4 @@ Product.create!(
   image_url: "https://images.pexels.com/photos/4238507/pexels-photo-4238507.jpeg",
   price: 25.87
 )
-#...
-
+# ...
